@@ -1,0 +1,44 @@
+.intro {
+    background-color: orange;
+}
+
+#firstID {
+    background-color: paleturquoise;
+}
+
+* {
+    background-color: lightgreen;
+}
+
+p {
+    background-color: peachpuff;
+}
+
+a[target] {
+    background-color: yellow;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: navy;
+}
+
+h1 + h2 {
+    text-align: center;
+    color: navy;
+}
+
+div > p {
+    background-color: lightskyblue
+}
+
+div ~ p {
+    color: green;
+}
