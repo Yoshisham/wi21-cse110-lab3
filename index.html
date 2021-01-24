@@ -1,12 +1,54 @@
 <!DOCTYPE html>
+
+    <style>   
+
+    body {
+        background-color: rgb(174, 238, 222);
+    }
+
+    @media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+        }
+    }
+    p {color: green}
+
+    p.in {display: inline;}
+    p.bk {display: block;}
+
+    .flex-container {
+        display: flex;
+        background-color: rgb(1, 43, 29);
+    }
+
+    .flex-container > div {
+        background-color: #67c06e;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }   
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        background-color: #064b66;
+        padding: 10px;
+    }
+
+    </style>
+
     <head>
         <title>My Site</title>
         <meta name="author" content="Joshue Aguirre">
+        <link rel="stylesheet" href="external.css">
         <link rel="aperture-icon" href="aperture.png" type="image/png">
+    
+    </head>
 
     <body>
         <header>
-            <h1>Welcome to my Website!</h1>
+            <h1><p class="bk">Welcome to my Website!</p></h1>
         </header>
         
         <main>
@@ -23,7 +65,7 @@
 
             <section>
                 <h2><i>Hello to you all!</i></h2>
-                <p>My name is <strong>Joshue Aguirre</strong> and this is my HTML site.</p>
+                <p>My name is <strong><p class="in">Joshue Aguirre</p></strong> and this is my HTML site.</p>
             </section>   
 
             <pre>
@@ -31,6 +73,7 @@
                  @ @ @ @ @ @
                   @   @   @
             </pre>
+
             <section>
                 <h3>New Things</h3>
 
@@ -89,6 +132,20 @@
                         <td>4/5</td>
                     </tr>
                 </table>
+
+                <div class="flex-container">
+                    <div>BL</div>
+                    <div>SEBTP</div>
+                    <div>SYMM</div>
+                    <div>H</div>  
+                </div>
+
+                <div class="grid-container">
+                    <div class="item1">Nick Drake</div>
+                    <div class="item2">Genesis</div>
+                    <div class="item3">The Black Crowes</div>  
+                    <div class="item4">David Bowie</div>
+                </div>
 
                 <fieldset>
                     <legend>Which album do you like the most?</legend>
