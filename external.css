@@ -1,23 +1,31 @@
+
+
+/*class selector*/
 .intro {
     background-color: orange;
 }
 
+/*ID selector*/
 #firstID {
     background-color: paleturquoise;
 }
 
+/*Universal Selector*/
 * {
     background-color: lightgreen;
 }
 
+/*Element Selector*/
 p {
     background-color: peachpuff;
 }
 
+/*Attribute Selector*/
 a[target] {
     background-color: yellow;
 }
 
+/*Pseudo-class Selector*/
 a:link {
     color: red;
 }
@@ -30,10 +38,25 @@ a:hover {
     color: navy;
 }
 
+/*Grouping/Combinators*/
 h1 + h2 {
     text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    text-decoration: lightseagreen;
     color: navy;
+    border-style: outset;
+    border-color: grey;
+    border-width: 1cm;
+    border-radius: 3em;
 }
+
+div {
+    background-color: lightsalmon;
+    width: 300px;
+    border: 15ex solid green;
+    padding: 30pt;
+    margin: 20rem;
+  }
 
 div > p {
     background-color: lightskyblue
@@ -42,3 +65,4 @@ div > p {
 div ~ p {
     color: green;
 }
+
